@@ -1,0 +1,39 @@
+{{> menu }}
+<div class="span9 container-nav-offset">
+	{{#sections}}
+		<section id="{{sectionId}}" class="sections">
+			<div class="section-inner">
+				<div class="page-header">
+					<h1>{{title}}</h1>
+				</div>			
+				{{#description}}
+					<p>
+						{{{paragraph}}}
+					</p>
+				{{/description}}
+				{{#liveExample}}
+					<h3>See it in action:</h3>
+					{{{liveContent}}}
+					{{{liveDescription}}}
+				{{/liveExample}}
+				{{#codeExample}}
+					<a id="{{sectionId}}-toggle" type="button" class="btn btn-primary codeToggle">Code</a>
+					<div id="{{sectionId}}-container" class="codeHidden">
+						<pre class="prettyprint linenums">
+{{liveContent}}</pre>
+					</div>
+				{{/codeExample}}
+				{{#resources}}
+					<h3>Links and other resources:</h3>
+					<ul>
+						{{#links}}
+							<li>
+								<a href="{{url}}">{{url}}</a>
+							</li>
+						{{/links}}
+				{{/resources}}
+				<a href="#top" class="topLink"><i class="icon-chevron-up"></i>Top</a>
+			</div>
+		</section>
+	{{/sections}}
+</div>
