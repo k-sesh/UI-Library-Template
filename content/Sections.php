@@ -1,9 +1,5 @@
 <?php
 
-$accordion = "<div class='well'><span>shanaynay</span></div>";
-$dragNdrop = "<div class='well'><span>a drag and drop example</span></div>";
-$css = "<div class='well'><span>css example</span></div>";
-
 class Sections
 {
 
@@ -11,31 +7,23 @@ class Sections
 
     public function sections()
     {
-		global $accordion, $dragNdrop, $css;
+		//global $accordion, $dragNdrop, $css;
 		
         return array(
 			//Accordion Section
             array(	'title' 		=> "Accordion", 
-					'description' 	=> 
-						array(
-							array('paragraph' 	=> 'This is the first paragraph.'),
-							array('paragraph' 	=> 'This is the second paragraph.'),
-							array('paragraph' 	=> 'This is the third paragraph.'),
-						),
 					'sectionId' 	=> "accordion",
 					'liveExample'	=> true,
-					'liveContent'	=> $accordion,
 					'codeExample'	=> true,
+					'description' 	=> "<p>Herp Derp</p>",
+					'liveContent'	=> '<div class="well"><span>shanaynays party</span></div>',
 			),
 			//Drag and Drop Section
             array(	'title' 		=> "Drag and Drop", 
-					'description' 	=> 
-						array(
-							array('paragraph' 	=> 'Drag and drop is fun for the whole family'),
-						),
+					'description' 	=> "this is a description",
 					'sectionId' 	=> "dragAndDrop",
 					'liveExample'	=> true,
-					'liveContent'	=> $dragNdrop,
+					'liveContent'	=> "<div class='well'><span>a drag and drop example</span></div>",
 					'codeExample'	=> true,
 					'resources'		=> true,
 					'links' 	=> 
@@ -46,15 +34,15 @@ class Sections
 			),
 			//CSS Section
             array(	'title' 		=> "CSS", 
-					'description' 	=> 
-						array(
-							array('paragraph' 	=> 'Yummy, delicious Cascading Style Sheets.'),
-							array('paragraph' 	=> 'Part of a complete breakfast!'),
-						),
+					'description' 	=> "<p>Woop Woop this is markup yeaaaaaaaa</p>",
+					'sectionId' 	=> "css"
+			),
+			array(	'title' 		=> "CSS", 
+					'description' 	=> "<p>Woop Woop this is markup yeaaaaaaaa</p>",
 					'sectionId' 	=> "css"
 			),
         );
     }
 
-    public $empty = false;
+   
 }
