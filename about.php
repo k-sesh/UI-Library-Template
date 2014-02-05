@@ -1,7 +1,7 @@
 <?
 
 //Variables
-$page = "Components";
+$page = "About";
 
 
 //Include the header.
@@ -10,7 +10,7 @@ include '/includes/header.php';
 include 'start_mustache.php'; 
 
 //Require the page content.
-require dirname(__FILE__).'/content/Components.php';
+require dirname(__FILE__).'/content/about/About.php';
 //Initialize your mustache engine and loaders.
 $m = new Mustache_Engine(array(
     'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/views'),
@@ -21,7 +21,7 @@ $m = new Mustache_Engine(array(
 //Set the template you want to use (this is the name of the mustache template file).
 $template = "sections";
 //Set the content you want to use (this is the name of your content PHP file).
-$content = new Components;
+$content = new About;
 
 
 //Render that shit.

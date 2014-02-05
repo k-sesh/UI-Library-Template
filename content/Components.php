@@ -1,6 +1,6 @@
 <?php
 
-class Sections
+class Components
 {
 
     public $pageName = "Components:";
