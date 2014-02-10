@@ -1,11 +1,14 @@
 <?php
 
-$how = 		array(	'title' 		=> "How to Use", 
-					'description' 	=> "Hmmm... how do I use a Demo UI Library?",
-					'sectionId' 	=> "dragAndDrop",
+$how = 		array(	'beginMenuGroup'=> true,
+					'groupHeader'	=> "Group",
+					
+					'title' 		=> "Section 2", 
+					'sectionId' 	=> "section2",
+					'description' 	=> "This section is the first section in the Group group. It has a live example, but no code example. It also has resources links.",
+					
 					'liveExample'	=> true,
 					'liveContent'	=> "<div class='well'><span>a drag and drop example</span></div>",
-					'codeExample'	=> true,
 					'resources'		=> true,
 					'links' 	=> 
 						array(

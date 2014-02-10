@@ -10,7 +10,7 @@ include '/includes/header.php';
 include 'start_mustache.php'; 
 
 //Require the page content.
-require dirname(__FILE__).'/content/Components.php';
+require dirname(__FILE__).'/content/components/Components.php';
 //Initialize your mustache engine and loaders.
 $m = new Mustache_Engine(array(
     'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/views'),

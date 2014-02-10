@@ -19,6 +19,13 @@
 {{liveContent}}</pre>
 					</div>
 				{{/codeExample}}
+				{{#customExample}}
+					<a id="{{sectionId}}-toggle" type="button" class="btn btn-primary codeToggle">Code</a>
+					<div id="{{sectionId}}-container" class="codeHidden">
+						<pre class="prettyprint linenums">
+{{customCode}}</pre>
+					</div>
+				{{/customExample}}
 				{{#resources}}
 					<h3>Links and other resources:</h3>
 					<ul>
